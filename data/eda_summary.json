@@ -1,0 +1,834 @@
+{
+  "dataset_summary": {
+    "total_records": 27003,
+    "total_features": 47,
+    "target_distribution": {
+      "Non-Default (0)": 23026,
+      "Default (1)": 3977
+    },
+    "default_rate": 0.1473,
+    "missing_values": {
+      "emp_title": 1682,
+      "emp_length": 730,
+      "desc": 8779,
+      "title": 9,
+      "mths_since_last_delinq": 17395,
+      "mths_since_last_record": 25065,
+      "revol_util": 35,
+      "last_pymnt_d": 51,
+      "last_credit_pull_d": 1,
+      "pub_rec_bankruptcies": 503
+    },
+    "duplicate_records": 0,
+    "numerical_columns": [
+      "loan_amnt",
+      "term",
+      "int_rate",
+      "installment",
+      "annual_inc",
+      "dti",
+      "delinq_2yrs",
+      "inq_last_6mths",
+      "open_acc",
+      "pub_rec",
+      "revol_bal",
+      "revol_util",
+      "total_acc",
+      "pub_rec_bankruptcies",
+      "emp_length"
+    ],
+    "categorical_columns": [
+      "grade",
+      "sub_grade",
+      "home_ownership",
+      "verification_status",
+      "purpose"
+    ]
+  },
+  "default_by_grade": {
+    "A": {
+      "total_loans": 7054,
+      "default_rate": 0.0611,
+      "defaults": 431
+    },
+    "B": {
+      "total_loans": 8189,
+      "default_rate": 0.1215,
+      "defaults": 995
+    },
+    "C": {
+      "total_loans": 5453,
+      "default_rate": 0.1753,
+      "defaults": 956
+    },
+    "D": {
+      "total_loans": 3532,
+      "default_rate": 0.2234,
+      "defaults": 789
+    },
+    "E": {
+      "total_loans": 1858,
+      "default_rate": 0.275,
+      "defaults": 511
+    },
+    "F": {
+      "total_loans": 698,
+      "default_rate": 0.3152,
+      "defaults": 220
+    },
+    "G": {
+      "total_loans": 219,
+      "default_rate": 0.3425,
+      "defaults": 75
+    }
+  },
+  "default_by_term": {
+    "36 months": {
+      "total_loans": 20382,
+      "default_rate": 0.1124,
+      "defaults": 2290
+    },
+    "60 months": {
+      "total_loans": 6621,
+      "default_rate": 0.2548,
+      "defaults": 1687
+    }
+  },
+  "default_by_home_ownership": {
+    "MORTGAGE": {
+      "total_loans": 11981,
+      "default_rate": 0.1396
+    },
+    "OWN": {
+      "total_loans": 2094,
+      "default_rate": 0.1552
+    },
+    "RENT": {
+      "total_loans": 12864,
+      "default_rate": 0.1533
+    }
+  },
+  "default_by_purpose": {
+    "car": {
+      "total_loans": 1046,
+      "default_rate": 0.1013
+    },
+    "credit_card": {
+      "total_loans": 3536,
+      "default_rate": 0.1106
+    },
+    "debt_consolidation": {
+      "total_loans": 12589,
+      "default_rate": 0.1539
+    },
+    "educational": {
+      "total_loans": 215,
+      "default_rate": 0.1535
+    },
+    "home_improvement": {
+      "total_loans": 2055,
+      "default_rate": 0.1314
+    },
+    "house": {
+      "total_loans": 266,
+      "default_rate": 0.1654
+    },
+    "major_purchase": {
+      "total_loans": 1508,
+      "default_rate": 0.1074
+    },
+    "medical": {
+      "total_loans": 496,
+      "default_rate": 0.1673
+    },
+    "moving": {
+      "total_loans": 395,
+      "default_rate": 0.1494
+    },
+    "other": {
+      "total_loans": 2704,
+      "default_rate": 0.1653
+    },
+    "renewable_energy": {
+      "total_loans": 73,
+      "default_rate": 0.1781
+    },
+    "small_business": {
+      "total_loans": 1221,
+      "default_rate": 0.2703
+    },
+    "vacation": {
+      "total_loans": 256,
+      "default_rate": 0.1367
+    },
+    "wedding": {
+      "total_loans": 643,
+      "default_rate": 0.1042
+    }
+  },
+  "numerical_distributions": {
+    "loan_amnt": {
+      "mean": 11087.95,
+      "median": 9750.0,
+      "std": 7392.76,
+      "min": 500.0,
+      "max": 35000.0,
+      "non_default_mean": 10897.15,
+      "default_mean": 12192.6,
+      "bins": [
+        {
+          "bin_start": 1200.0,
+          "bin_end": 4016.67,
+          "bin_label": "1200-4017",
+          "count": 4049
+        },
+        {
+          "bin_start": 4016.67,
+          "bin_end": 6833.33,
+          "bin_label": "4017-6833",
+          "count": 4992
+        },
+        {
+          "bin_start": 6833.33,
+          "bin_end": 9650.0,
+          "bin_label": "6833-9650",
+          "count": 4225
+        },
+        {
+          "bin_start": 9650.0,
+          "bin_end": 12466.67,
+          "bin_label": "9650-12467",
+          "count": 4631
+        },
+        {
+          "bin_start": 12466.67,
+          "bin_end": 15283.33,
+          "bin_label": "12467-15283",
+          "count": 2872
+        },
+        {
+          "bin_start": 15283.33,
+          "bin_end": 18100.0,
+          "bin_label": "15283-18100",
+          "count": 1552
+        },
+        {
+          "bin_start": 18100.0,
+          "bin_end": 20916.67,
+          "bin_label": "18100-20917",
+          "count": 1494
+        },
+        {
+          "bin_start": 20916.67,
+          "bin_end": 23733.33,
+          "bin_label": "20917-23733",
+          "count": 555
+        },
+        {
+          "bin_start": 23733.33,
+          "bin_end": 26550.0,
+          "bin_label": "23733-26550",
+          "count": 1453
+        },
+        {
+          "bin_start": 26550.0,
+          "bin_end": 29366.67,
+          "bin_label": "26550-29367",
+          "count": 168
+        },
+        {
+          "bin_start": 29366.67,
+          "bin_end": 32183.33,
+          "bin_label": "29367-32183",
+          "count": 311
+        },
+        {
+          "bin_start": 32183.33,
+          "bin_end": 35000.0,
+          "bin_label": "32183-35000",
+          "count": 483
+        }
+      ]
+    },
+    "int_rate": {
+      "mean": 11.92,
+      "median": 11.71,
+      "std": 3.7,
+      "min": 5.42,
+      "max": 24.4,
+      "non_default_mean": 11.59,
+      "default_mean": 13.82,
+      "bins": [
+        {
+          "bin_start": 5.42,
+          "bin_end": 6.72,
+          "bin_label": "5-7",
+          "count": 2021
+        },
+        {
+          "bin_start": 6.72,
+          "bin_end": 8.02,
+          "bin_label": "7-8",
+          "count": 3743
+        },
+        {
+          "bin_start": 8.02,
+          "bin_end": 9.31,
+          "bin_label": "8-9",
+          "count": 1240
+        },
+        {
+          "bin_start": 9.31,
+          "bin_end": 10.61,
+          "bin_label": "9-11",
+          "count": 2829
+        },
+        {
+          "bin_start": 10.61,
+          "bin_end": 11.91,
+          "bin_label": "11-12",
+          "count": 4305
+        },
+        {
+          "bin_start": 11.91,
+          "bin_end": 13.2,
+          "bin_label": "12-13",
+          "count": 3104
+        },
+        {
+          "bin_start": 13.2,
+          "bin_end": 14.5,
+          "bin_label": "13-15",
+          "count": 3163
+        },
+        {
+          "bin_start": 14.5,
+          "bin_end": 15.8,
+          "bin_label": "15-16",
+          "count": 2326
+        },
+        {
+          "bin_start": 15.8,
+          "bin_end": 17.1,
+          "bin_label": "16-17",
+          "count": 1817
+        },
+        {
+          "bin_start": 17.1,
+          "bin_end": 18.39,
+          "bin_label": "17-18",
+          "count": 1177
+        },
+        {
+          "bin_start": 18.39,
+          "bin_end": 19.69,
+          "bin_label": "18-20",
+          "count": 644
+        },
+        {
+          "bin_start": 19.69,
+          "bin_end": 20.99,
+          "bin_label": "20-21",
+          "count": 390
+        }
+      ]
+    },
+    "annual_inc": {
+      "mean": 68777.71,
+      "median": 59000.0,
+      "std": 67648.53,
+      "min": 4000.0,
+      "max": 6000000.0,
+      "non_default_mean": 70016.9,
+      "default_mean": 61603.02,
+      "bins": [
+        {
+          "bin_start": 14400.0,
+          "bin_end": 32366.67,
+          "bin_label": "14400-32367",
+          "count": 3445
+        },
+        {
+          "bin_start": 32366.67,
+          "bin_end": 50333.33,
+          "bin_label": "32367-50333",
+          "count": 7188
+        },
+        {
+          "bin_start": 50333.33,
+          "bin_end": 68300.0,
+          "bin_label": "50333-68300",
+          "count": 5949
+        },
+        {
+          "bin_start": 68300.0,
+          "bin_end": 86266.67,
+          "bin_label": "68300-86267",
+          "count": 4250
+        },
+        {
+          "bin_start": 86266.67,
+          "bin_end": 104233.33,
+          "bin_label": "86267-104233",
+          "count": 2358
+        },
+        {
+          "bin_start": 104233.33,
+          "bin_end": 122200.0,
+          "bin_label": "104233-122200",
+          "count": 1437
+        },
+        {
+          "bin_start": 122200.0,
+          "bin_end": 140166.67,
+          "bin_label": "122200-140167",
+          "count": 818
+        },
+        {
+          "bin_start": 140166.67,
+          "bin_end": 158133.33,
+          "bin_label": "140167-158133",
+          "count": 411
+        },
+        {
+          "bin_start": 158133.33,
+          "bin_end": 176100.0,
+          "bin_label": "158133-176100",
+          "count": 269
+        },
+        {
+          "bin_start": 176100.0,
+          "bin_end": 194066.67,
+          "bin_label": "176100-194067",
+          "count": 152
+        },
+        {
+          "bin_start": 194066.67,
+          "bin_end": 212033.33,
+          "bin_label": "194067-212033",
+          "count": 158
+        },
+        {
+          "bin_start": 212033.33,
+          "bin_end": 230000.0,
+          "bin_label": "212033-230000",
+          "count": 71
+        }
+      ]
+    },
+    "dti": {
+      "mean": 13.26,
+      "median": 13.35,
+      "std": 6.66,
+      "min": 0.0,
+      "max": 29.99,
+      "non_default_mean": 13.14,
+      "default_mean": 13.97,
+      "bins": [
+        {
+          "bin_start": 0.35,
+          "bin_end": 2.53,
+          "bin_label": "0-3",
+          "count": 1366
+        },
+        {
+          "bin_start": 2.53,
+          "bin_end": 4.7,
+          "bin_label": "3-5",
+          "count": 1640
+        },
+        {
+          "bin_start": 4.7,
+          "bin_end": 6.88,
+          "bin_label": "5-7",
+          "count": 2094
+        },
+        {
+          "bin_start": 6.88,
+          "bin_end": 9.06,
+          "bin_label": "7-9",
+          "count": 2509
+        },
+        {
+          "bin_start": 9.06,
+          "bin_end": 11.23,
+          "bin_label": "9-11",
+          "count": 2794
+        },
+        {
+          "bin_start": 11.23,
+          "bin_end": 13.41,
+          "bin_label": "11-13",
+          "count": 2914
+        },
+        {
+          "bin_start": 13.41,
+          "bin_end": 15.59,
+          "bin_label": "13-16",
+          "count": 3050
+        },
+        {
+          "bin_start": 15.59,
+          "bin_end": 17.76,
+          "bin_label": "16-18",
+          "count": 2723
+        },
+        {
+          "bin_start": 17.76,
+          "bin_end": 19.94,
+          "bin_label": "18-20",
+          "count": 2552
+        },
+        {
+          "bin_start": 19.94,
+          "bin_end": 22.12,
+          "bin_label": "20-22",
+          "count": 2239
+        },
+        {
+          "bin_start": 22.12,
+          "bin_end": 24.29,
+          "bin_label": "22-24",
+          "count": 1869
+        },
+        {
+          "bin_start": 24.29,
+          "bin_end": 26.47,
+          "bin_label": "24-26",
+          "count": 716
+        }
+      ]
+    },
+    "installment": {
+      "mean": 323.38,
+      "median": 277.57,
+      "std": 209.87,
+      "min": 15.69,
+      "max": 1302.69,
+      "non_default_mean": 320.82,
+      "default_mean": 338.19,
+      "bins": [
+        {
+          "bin_start": 38.67,
+          "bin_end": 113.21,
+          "bin_label": "39-113",
+          "count": 3154
+        },
+        {
+          "bin_start": 113.21,
+          "bin_end": 187.75,
+          "bin_label": "113-188",
+          "count": 4872
+        },
+        {
+          "bin_start": 187.75,
+          "bin_end": 262.29,
+          "bin_label": "188-262",
+          "count": 4380
+        },
+        {
+          "bin_start": 262.29,
+          "bin_end": 336.83,
+          "bin_label": "262-337",
+          "count": 4003
+        },
+        {
+          "bin_start": 336.83,
+          "bin_end": 411.37,
+          "bin_label": "337-411",
+          "count": 3161
+        },
+        {
+          "bin_start": 411.37,
+          "bin_end": 485.91,
+          "bin_label": "411-486",
+          "count": 1865
+        },
+        {
+          "bin_start": 485.91,
+          "bin_end": 560.44,
+          "bin_label": "486-560",
+          "count": 1756
+        },
+        {
+          "bin_start": 560.44,
+          "bin_end": 634.98,
+          "bin_label": "560-635",
+          "count": 948
+        },
+        {
+          "bin_start": 634.98,
+          "bin_end": 709.52,
+          "bin_label": "635-710",
+          "count": 933
+        },
+        {
+          "bin_start": 709.52,
+          "bin_end": 784.06,
+          "bin_label": "710-784",
+          "count": 411
+        },
+        {
+          "bin_start": 784.06,
+          "bin_end": 858.6,
+          "bin_label": "784-859",
+          "count": 598
+        },
+        {
+          "bin_start": 858.6,
+          "bin_end": 933.14,
+          "bin_label": "859-933",
+          "count": 385
+        }
+      ]
+    },
+    "revol_bal": {
+      "mean": 13340.88,
+      "median": 8808.0,
+      "std": 15913.5,
+      "min": 0.0,
+      "max": 149588.0,
+      "non_default_mean": 13300.73,
+      "default_mean": 13573.37,
+      "bins": [
+        {
+          "bin_start": 0.0,
+          "bin_end": 6838.17,
+          "bin_label": "0-6838",
+          "count": 11166
+        },
+        {
+          "bin_start": 6838.17,
+          "bin_end": 13676.33,
+          "bin_label": "6838-13676",
+          "count": 6922
+        },
+        {
+          "bin_start": 13676.33,
+          "bin_end": 20514.5,
+          "bin_label": "13676-20514",
+          "count": 3830
+        },
+        {
+          "bin_start": 20514.5,
+          "bin_end": 27352.67,
+          "bin_label": "20514-27353",
+          "count": 2008
+        },
+        {
+          "bin_start": 27352.67,
+          "bin_end": 34190.83,
+          "bin_label": "27353-34191",
+          "count": 1080
+        },
+        {
+          "bin_start": 34190.83,
+          "bin_end": 41029.0,
+          "bin_label": "34191-41029",
+          "count": 600
+        },
+        {
+          "bin_start": 41029.0,
+          "bin_end": 47867.17,
+          "bin_label": "41029-47867",
+          "count": 410
+        },
+        {
+          "bin_start": 47867.17,
+          "bin_end": 54705.33,
+          "bin_label": "47867-54705",
+          "count": 221
+        },
+        {
+          "bin_start": 54705.33,
+          "bin_end": 61543.5,
+          "bin_label": "54705-61544",
+          "count": 182
+        },
+        {
+          "bin_start": 61543.5,
+          "bin_end": 68381.67,
+          "bin_label": "61544-68382",
+          "count": 125
+        },
+        {
+          "bin_start": 68381.67,
+          "bin_end": 75219.83,
+          "bin_label": "68382-75220",
+          "count": 93
+        },
+        {
+          "bin_start": 75219.83,
+          "bin_end": 82058.0,
+          "bin_label": "75220-82058",
+          "count": 95
+        }
+      ]
+    },
+    "total_acc": {
+      "mean": 22.08,
+      "median": 20.0,
+      "std": 11.42,
+      "min": 2.0,
+      "max": 81.0,
+      "non_default_mean": 22.2,
+      "default_mean": 21.38,
+      "bins": [
+        {
+          "bin_start": 4.0,
+          "bin_end": 8.33,
+          "bin_label": "4-8",
+          "count": 2388
+        },
+        {
+          "bin_start": 8.33,
+          "bin_end": 12.67,
+          "bin_label": "8-13",
+          "count": 3352
+        },
+        {
+          "bin_start": 12.67,
+          "bin_end": 17.0,
+          "bin_label": "13-17",
+          "count": 3904
+        },
+        {
+          "bin_start": 17.0,
+          "bin_end": 21.33,
+          "bin_label": "17-21",
+          "count": 4770
+        },
+        {
+          "bin_start": 21.33,
+          "bin_end": 25.67,
+          "bin_label": "21-26",
+          "count": 3380
+        },
+        {
+          "bin_start": 25.67,
+          "bin_end": 30.0,
+          "bin_label": "26-30",
+          "count": 2730
+        },
+        {
+          "bin_start": 30.0,
+          "bin_end": 34.33,
+          "bin_label": "30-34",
+          "count": 2547
+        },
+        {
+          "bin_start": 34.33,
+          "bin_end": 38.67,
+          "bin_label": "34-39",
+          "count": 1391
+        },
+        {
+          "bin_start": 38.67,
+          "bin_end": 43.0,
+          "bin_label": "39-43",
+          "count": 911
+        },
+        {
+          "bin_start": 43.0,
+          "bin_end": 47.33,
+          "bin_label": "43-47",
+          "count": 699
+        },
+        {
+          "bin_start": 47.33,
+          "bin_end": 51.67,
+          "bin_label": "47-52",
+          "count": 323
+        },
+        {
+          "bin_start": 51.67,
+          "bin_end": 56.0,
+          "bin_label": "52-56",
+          "count": 251
+        }
+      ]
+    }
+  },
+  "correlation_matrix": {
+    "loan_amnt": {
+      "loan_amnt": 1.0,
+      "int_rate": 0.306,
+      "annual_inc": 0.253,
+      "dti": 0.064,
+      "installment": 0.932,
+      "revol_bal": 0.316,
+      "total_acc": 0.256,
+      "loan_status": 0.062
+    },
+    "int_rate": {
+      "loan_amnt": 0.306,
+      "int_rate": 1.0,
+      "annual_inc": 0.048,
+      "dti": 0.109,
+      "installment": 0.28,
+      "revol_bal": 0.098,
+      "total_acc": -0.046,
+      "loan_status": 0.213
+    },
+    "annual_inc": {
+      "loan_amnt": 0.253,
+      "int_rate": 0.048,
+      "annual_inc": 1.0,
+      "dti": -0.116,
+      "installment": 0.251,
+      "revol_bal": 0.265,
+      "total_acc": 0.222,
+      "loan_status": -0.044
+    },
+    "dti": {
+      "loan_amnt": 0.064,
+      "int_rate": 0.109,
+      "annual_inc": -0.116,
+      "dti": 1.0,
+      "installment": 0.055,
+      "revol_bal": 0.226,
+      "total_acc": 0.227,
+      "loan_status": 0.044
+    },
+    "installment": {
+      "loan_amnt": 0.932,
+      "int_rate": 0.28,
+      "annual_inc": 0.251,
+      "dti": 0.055,
+      "installment": 1.0,
+      "revol_bal": 0.313,
+      "total_acc": 0.231,
+      "loan_status": 0.029
+    },
+    "revol_bal": {
+      "loan_amnt": 0.316,
+      "int_rate": 0.098,
+      "annual_inc": 0.265,
+      "dti": 0.226,
+      "installment": 0.313,
+      "revol_bal": 1.0,
+      "total_acc": 0.312,
+      "loan_status": 0.006
+    },
+    "total_acc": {
+      "loan_amnt": 0.256,
+      "int_rate": -0.046,
+      "annual_inc": 0.222,
+      "dti": 0.227,
+      "installment": 0.231,
+      "revol_bal": 0.312,
+      "total_acc": 1.0,
+      "loan_status": -0.025
+    },
+    "loan_status": {
+      "loan_amnt": 0.062,
+      "int_rate": 0.213,
+      "annual_inc": -0.044,
+      "dti": 0.044,
+      "installment": 0.029,
+      "revol_bal": 0.006,
+      "total_acc": -0.025,
+      "loan_status": 1.0
+    }
+  }
+}
